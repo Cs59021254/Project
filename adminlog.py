@@ -3,11 +3,11 @@ import sys
 import time
 
 
-def userlog(name) :
-    log = open('userlog.txt', 'a')
+def userlog(action) :
+    log = open('adminlog.txt', 'a')
     timeis = time.ctime()
     log.write('\n')
     log.write(timeis)
     log.write('   :   ')
-    log.write(name)
+    log.write(action)
     log.close
